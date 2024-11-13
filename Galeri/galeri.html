@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri SMPN 2 Malang</title>
+  <!-- CSS Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Ikon Bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css">
+  <style>
+    .navbar {
+      font-family: 'Montserrat', sans-serif;
+      margin-bottom: 10px;
+      padding-left: 20px;
+    }
+    .search-icon {
+      background-color: #E04E4E; 
+      color: white;
+      width: 98px; 
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      transition: all 0.5s;
+      border-radius: 14px; 
+    }
+    .search-icon:hover{
+      background-color: white;
+      color: #E04E4E;
+      border: solid 2px #E04E4E;     
+    }
+    .galeri-title {
+        font-size: 35px;
+        color: #343a40;
+        margin-bottom: 20px;
+        text-align: center;
+        margin-top: 5%;
+        font-family: 'montserrat', sans-serif;
+        font-weight: bold;
+    }
+    .garis-bawah{
+        margin: 0 auto;
+        width: 30%;
+        border: none;
+        height: 2px;
+        background-color: #E04E4E;
+        margin-bottom: 90px;
+    }
+    .foto {
+    margin-bottom: 45px; 
+    }
+    .foto-kegiatan .col-md-5 {
+    margin-right: 35px;
+    } 
+    #videoCarousel .carousel-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      border-radius: 30px;
+      overflow: hidden;
+      position: relative;
+      margin-bottom: 15%;
+      ;
+    }
+    #videoCarousel .carousel-item img {
+      width: 100%;
+      height: auto;
+    }
+    .play-icon {
+      font-size: 3rem;
+      color: white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: color 0.3s;
+    }
+    .play-icon:hover {
+      color: #E04E4E;
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: auto;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      color: black;
+      font-size: 1.5rem;
+      padding: 10px;
+    }
+    .carousel-control-prev {
+      left: 14%;
+    }
+    .carousel-control-next {
+      right: 14%;
+    }
+        .footer h5 {
+            font-size: 1.25rem;
+            margin-bottom: 20px;
+        }
+        .footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+        .footer .social-icons a {
+            color: #FFFFFF;
+            font-size: 1.5rem;
+            margin-right: 15px;
+        }
+        .footer .copyright {
+            text-align: right;
+            margin-top: 20px;
+            font-size: 1rem;
+        }
+        .footer .row > div {
+            margin-bottom: 30px;
+        }
+        .footer {
+        background-color: #2B384B;
+        color: white;
+        padding: 20px 0;
+        text-align: left;
+        }
+        .header-foot h5{
+        font-family: 'montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 28px;
+        position: relative;
+        left: 50px;
+        }
+        .header-foot p{
+          font-family: 'open sans', sans-serif;
+        }
+        .dino{
+          position: relative;
+          left: 50px;
+        }
+        .vismi{
+          position: relative;
+          top: 30px;
+        }
+
+</style>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light sticky-top">
+        <div class="container">
+          <!-- Logo -->
+          <a class="navbar-brand" href="../Beranda/berandasmp.html">
+            <img src="Image.png" alt="Logo">
+          </a>
+          <!-- hamburger -->
+          <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Menu Navbar -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="../Beranda/berandasmp.html">Beranda</a></li>
+              <li class="nav-item"><a class="nav-link" href="../profil/profilsmp.html">Profil</a></li>
+              <li class="nav-item"><a class="nav-link" href="../Prestasi/prestasi.html">Prestasi</a></li>
+              <li class="nav-item"><a class="nav-link" href="../kesiswaan/kesiswaan.html">Kesiswaan</a></li>
+              <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+              <li class="nav-item"><a class="nav-link" href="../sarpras/sarpras.html">Sarpras</a></li>
+              <li class="nav-item"><a class="nav-link" href="../Berita/berita.html">Berita</a></li>
+              <li class="nav-item"><a class="nav-link" href="../kontak/kontak.html">Kontak</a></li>
+              <li class="nav-item ms-3">
+                <a class="nav-link p-0" href="#">
+                  <div class="search-icon">
+                    <i class="bi bi-search"></i>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+<div class="hero-image-container">
+    <img src="Hero (3).png" class="img-fluid w-100 mb-4">
+</div>
+
+<!--title galeri-->
+<h1 class="galeri-title">
+   Galeri 
+</h1>
+<hr class="garis-bawah">
+
+<!--foto foto-->
+<div class="container">
+    <div class="row justify-content-center foto-kegiatan">
+        <div class="col-md-5 foto ">
+            <img src="image (4).png">
+        </div>
+        <div class="col-md-5 foto">
+            <img src="image 10.png">
+        </div>
+        <div class="col-md-5 foto">
+            <img src="image 11.png">
+        </div>
+        <div class="col-md-5 foto">
+            <img src="image 12.png">
+        </div>
+        <div class="col-md-5 foto">
+            <img src="image 14 (1).png">
+        </div>
+        <div class="col-md-5 foto">
+            <img src="image 14.png">
+        </div>
+        <div class="col-md-5 foto">
+            <img src="image 15.png">
+        </div>
+        <div class="col-md-5 foto">
+            <img src="image 16.png">
+        </div>
+    </div>
+</div>
+
+<!--video-->
+<h1 class="galeri-title">
+    Video
+ </h1>
+ <hr class="garis-bawah">
+
+<!--slide galeri-->
+<div id="videoCarousel" class="carousel slide ">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <a href="https://youtu.be/cOkSZ17gm5k?si=9ObQT-696s8QLUzR" target="_blank">
+          <img src="thumbnail 1 (1).png" class="d-block w-100" alt="Video 1">
+          <i class="bi bi-play-circle-fill play-icon"></i>
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="https://youtu.be/tHej61IUL58?si=qNmdtUelhiaq7g6C" target="_blank">
+          <img src="thumbnail 4.png" class="d-block w-100" alt="Video 2">
+          <i class="bi bi-play-circle-fill play-icon"></i>
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="https://youtu.be/QBW5-ainqbo?si=C8scTmlJLTKi_LcZ" target="_blank">
+          <img src="thumbnail 5.png" class="d-block w-100" alt="Video 3">
+          <i class="bi bi-play-circle-fill play-icon"></i>
+        </a>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+<!--footer-->
+<footer class="footer">
+    <div class="container">
+        <div class="row text-center text-md-start">
+            <div class="col-md-3 mb-3 header-foot">
+                <img src="logo putih.png"><br><br>
+                <p class="vismi">Unggul Dalam Imtaq dan Iptek, Berkarakter, Serta Peduli dan Berbudaya Lingkungan</p>
+            </div>
+            <div class="col-md-3 mb-3 header-foot">
+                <h5>Alamat</h5><br><br>
+                <p>Jl. Prof. Moch Yamin No. 60, Sukoharjo, Kec. Klojen, Kota Malang, Jawa Timur 65118</p>
+            </div>
+            <div class="col-md-3 mb-3 header-foot">
+                <h5>Kontak</h5><br><br>
+                <p>(0341) 325508</p>
+                <p>smpn2mlg.medsos@gmail.com</p>
+            </div>
+            <div class="col-md-3 mb-3 header-foot">
+                <h5>Kantor</h5><br><br>
+                <p class="dino">Senin - Jumat</p>
+                <p class="dino">07.00 - 16.00</p>
+            </div>
+        </div>
+        <div class="row bottom-row">
+            <div class="col-md-6 d-flex justify-content-start">
+                <div class="social-icons">
+                  <a href="https://www.facebook.com/osis.satwimaba.1"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.youtube.com/channel/UCwuOyXafaSoxICVCQKu1BQg"><i class="bi bi-youtube"></i></a>
+                  <a href="https://www.instagram.com/smpnegeri2mlg/?igshid=13omrlhk8pdjp"><i class="bi bi-instagram"></i></a>
+                  <a href="https://x.com/smpn2mlg"><i class="bi bi-twitter"></i></a>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex justify-content-end">
+                <p class="copyright">&copy; 2024 All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+  </footer>
+  <!-- Script Bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  </body>

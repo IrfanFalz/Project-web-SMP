@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Struktur Guru </title>
+  <!-- CSS Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Ikon Bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+    .navbar {
+      margin-bottom: 10px;
+      padding-left: 20px;
+    }
+    .search-icon {
+      background-color: #E04E4E; 
+      color: white;
+      width: 98px; 
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      transition: all 0.5s;
+      border-radius: 14px; 
+    }
+    .search-icon:hover{
+      background-color: white;
+      color: #E04E4E;
+      border: solid 2px #E04E4E;
+    }
+    .foto-guru-container {
+      position: relative;
+      width: 100%;
+      max-width: 1200px; 
+      margin: 10% auto; 
+      border-radius: 15px;
+    }
+
+    .foto-guru-container img {
+      width: 100%;
+      display: block;
+    }
+    .foto-guru-caption {
+      position: absolute;
+      bottom: 10px;
+      width: 1194px;
+      background: rgba(0, 0, 0, 0.6); 
+      color: white;
+      text-align: center;
+      padding: 25px;
+      font-size: 1.2em;
+      border-radius: 0 0 50px 50px;
+      font-family: 'montserrat', sans-serif;
+      font-weight: bold;
+    }
+    .kepsek{
+        justify-content: center;
+        display: flex;
+        margin-bottom: 13%;
+
+    }
+    .title-struktur{
+        text-align: center;
+        font-family: 'montserrat', sans-serif;
+        font-size: 35px;
+        margin-bottom: 35px;
+    }
+    .title-struktur::after{
+        content: '';
+        display: block;
+        width: 30%;
+        height: 1px;
+        background-color: #E04E4E;
+        margin: 20px auto 50px auto;
+    }
+    .waka{
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 15%;
+    }
+        .footer h5 {
+            font-size: 1.25rem;
+            margin-bottom: 20px;
+        }
+        .footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+        .footer .social-icons a {
+            color: #FFFFFF;
+            font-size: 1.5rem;
+            margin-right: 15px;
+        }
+        .footer .copyright {
+            text-align: right;
+            margin-top: 20px;
+            font-size: 1rem;
+        }
+        .footer .row > div {
+            margin-bottom: 30px;
+        }
+        .footer {
+        background-color: #2B384B;
+        color: white;
+        padding: 20px 0;
+        text-align: left;
+        }
+        .header-foot h5{
+        font-family: 'montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 28px;
+        position: relative;
+        left: 50px;
+        }
+        .header-foot p{
+          font-family: 'open sans', sans-serif;
+        }
+        .dino{
+          position: relative;
+          left: 50px;
+        }
+        .vismi{
+          position: relative;
+          top: 30px;
+        }
+  </style>
+</head>
+<body>
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-light sticky-top">
+  <div class="container">
+    <!-- Logo -->
+    <a class="navbar-brand" href="../Beranda/berandasmp.html">
+      <img src="Image.png" alt="Logo">
+    </a>
+    <!-- hamburger -->
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Menu Navbar -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="../Beranda/berandasmp.html">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link" href="../profil/profilsmp.html">Profil</a></li>
+        <li class="nav-item"><a class="nav-link" href="../Prestasi/prestasi.html">Prestasi</a></li>
+        <li class="nav-item"><a class="nav-link" href="../kesiswaan/kesiswaan.html">Kesiswaan</a></li>
+        <li class="nav-item"><a class="nav-link" href="../Galeri/galeri.html">Galeri</a></li>
+        <li class="nav-item"><a class="nav-link" href="../sarpras/sarpras.html">Sarpras</a></li>
+        <li class="nav-item"><a class="nav-link" href="../Berita/berita.html">Berita</a></li>
+        <li class="nav-item"><a class="nav-link" href="../kontak/kontak.html">Kontak</a></li>
+        <li class="nav-item ms-3">
+          <a class="nav-link p-0" href="#">
+            <div class="search-icon">
+              <i class="bi bi-search"></i>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <div class="hero-image-container">
+    <img src="Hero (2).png" class="img-fluid w-100" alt="Hero Image">
+  </div>
+
+  <!--foto bapak ibu guru-->
+  <div class="foto-guru-container">
+    <img src="Image (4).png" alt="Foto Bapak Ibu Guru">
+    <div class="foto-guru-caption">Bapak Ibu Guru SMP Negeri 2 Malang</div>
+  </div>
+
+    <h1 class="title-struktur">
+       Struktur organisasi
+    </h1>
+    <div class="container">
+        <div class="foto-waka">
+            <div class="kepsek">
+                <img src="Card (1).png">
+            </div>
+            <div class="waka">
+                <img src="Card (2).png">
+                <img src="Card (3).png">
+                <img src="Card (4).png">
+                <img src="Card (5).png">
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+ <footer class="footer">
+    <div class="container">
+        <div class="row text-center text-md-start">
+            <div class="col-md-3 mb-3 header-foot">
+                <img src="logo putih.png"><br><br>
+                <p class="vismi">Unggul Dalam Imtaq dan Iptek, Berkarakter, Serta Peduli dan Berbudaya Lingkungan</p>
+            </div>
+            <div class="col-md-3 mb-3 header-foot">
+                <h5>Alamat</h5><br><br>
+                <p>Jl. Prof. Moch Yamin No. 60, Sukoharjo, Kec. Klojen, Kota Malang, Jawa Timur 65118</p>
+            </div>
+            <div class="col-md-3 mb-3 header-foot">
+                <h5>Kontak</h5><br><br>
+                <p>(0341) 325508</p>
+                <p>smpn2mlg.medsos@gmail.com</p>
+            </div>
+            <div class="col-md-3 mb-3 header-foot">
+                <h5>Kantor</h5><br><br>
+                <p class="dino">Senin - Jumat</p>
+                <p class="dino">07.00 - 16.00</p>
+            </div>
+        </div>
+        <div class="row bottom-row">
+            <div class="col-md-6 d-flex justify-content-start">
+                <div class="social-icons">
+                  <a href="https://www.facebook.com/osis.satwimaba.1"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.youtube.com/channel/UCwuOyXafaSoxICVCQKu1BQg"><i class="bi bi-youtube"></i></a>
+                  <a href="https://www.instagram.com/smpnegeri2mlg/?igshid=13omrlhk8pdjp"><i class="bi bi-instagram"></i></a>
+                  <a href="https://x.com/smpn2mlg"><i class="bi bi-twitter"></i></a>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex justify-content-end">
+                <p class="copyright">&copy; 2024 All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+  </footer>
+
+  <!-- JS Bootstrap (Optional if you need Bootstrap's JavaScript features) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
