@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prestasi SMPN 2 Malang</title>
+  <!-- CSS Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Ikon Bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css">
+  <style>
+    .navbar {
+      font-family: 'Montserrat', sans-serif;
+      margin-bottom: 10px;
+      padding-left: 20px;
+    }
+    .search-icon {
+      background-color: #E04E4E; 
+      color: white;
+      width: 98px; 
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      transition: all 0.5s;
+      border-radius: 14px; 
+    }
+    .search-icon:hover{
+      background-color: white;
+      color: #E04E4E;
+      border: solid 2px #E04E4E;
+    }
+    .foto-prestasi{
+      margin: 10% auto;
+    }
+    .prestasi{
+      position: relative;
+      margin-left: 35px;
+    }
+    .prestasi img {
+      width: 100%;
+      height: auto;
+      border-radius: 20px; 
+    }
+    .prestasi-caption {
+      position: absolute;
+      bottom: 0;
+      left: 10px;
+      width: 96%; 
+      padding: 10px;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.6); 
+      text-align: center;
+      font-size: 15px;
+      border-radius: 0 0 20px 20px;
+    }
+    .video-title {
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      margin-top: 30px;
+    }
+    .video-title h1 {
+      font-size: 35px;
+      font-weight: b2old;
+    }
+    .video-title::after {
+      content: '';
+      display: block;
+      width: 30%;
+      height: 1px;
+      background-color: #E04E4E;
+      margin: 30px auto 70px auto;
+    }
+    #videoCarousel .carousel-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      border-radius: 30px;
+      overflow: hidden;
+      position: relative;
+      margin-bottom: 15%;
+      ;
+    }
+    #videoCarousel .carousel-item img {
+      width: 100%;
+      height: auto;
+    }
+    .play-icon {
+      font-size: 3rem;
+      color: white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: color 0.3s;
+    }
+    .play-icon:hover {
+      color: #E04E4E;
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: auto;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      color: black;
+      font-size: 1.5rem;
+      padding: 10px;
+    }
+    .carousel-control-prev {
+      left: 12%;
+    }
+    .carousel-control-next {
+      right: 12%;
+    }
+        .footer h5 {
+            font-size: 1.25rem;
+            margin-bottom: 20px;
+        }
+        .footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+        .footer .social-icons a {
+            color: #FFFFFF;
+            font-size: 1.5rem;
+            margin-right: 15px;
+        }
+        .footer .copyright {
+            text-align: right;
+            margin-top: 20px;
+            font-size: 1rem;
+        }
+        .footer .row > div {
+            margin-bottom: 30px;
+        }
+        .footer {
+        background-color: #2B384B;
+        color: white;
+        padding: 20px 0;
+        text-align: left;
+        }
+        .header-foot h5{
+        font-family: 'montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 28px;
+        position: relative;
+        left: 50px;
+        }
+        .header-foot p{
+          font-family: 'open sans', sans-serif;
+        }
+        .dino{
+          position: relative;
+          left: 50px;
+        }
+        .vismi{
+          position: relative;
+          top: 30px;
+        }
+  </style>
+</head>
+<body>
+ <!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-light sticky-top">
+  <div class="container">
+    <!-- Logo -->
+    <a class="navbar-brand" href="../Beranda/berandasmp.html">
+      <img src="Image.png" alt="Logo">
+    </a>
+    <!-- hamburger -->
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Menu Navbar -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="../Beranda/berandasmp.html">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link" href="../profil/profilsmp.html">Profil</a></li>
+        <li class="nav-item"><a class="nav-link" href="prestasi.html">Prestasi</a></li>
+        <li class="nav-item"><a class="nav-link" href="../kesiswaan/kesiswaan.html">Kesiswaan</a></li>
+        <li class="nav-item"><a class="nav-link" href="../Galeri/galeri.html">Galeri</a></li>
+        <li class="nav-item"><a class="nav-link" href="../sarpras/sarpras.html">Sarpras</a></li>
+        <li class="nav-item"><a class="nav-link" href="../Berita/berita.html">Berita</a></li>
+        <li class="nav-item"><a class="nav-link" href="../kontak/kontak.html">Kontak</a></li>
+        <li class="nav-item ms-3">
+          <a class="nav-link p-0" href="#">
+            <div class="search-icon">
+              <i class="bi bi-search"></i>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <div class="hero-image-container">
+    <img src="Hero (2).png" class="img-fluid w-100" alt="Hero Image">
+  </div>
+
+  <!--foto foto prestasi-->
+  <div class="container foto-prestasi">
+    <div class="row justify-content-center">
+      <div class="col-md-5 mb-5 prestasi">
+        <img src="Prestasi 1.png" alt="Prestasi 1">
+        <div class="prestasi-caption" style="padding-bottom: 20px; padding-top: 20px;">Juara 1 kelas 9A kemah blok 2023</div>
+      </div>
+      <div class="col-md-5 mb-5 prestasi">
+        <img src="prestasi 2.png" alt="Prestasi 2">
+        <div class="prestasi-caption">Juara Mula 2 LPKBB JURAGAN 2 Malang<br><strong>Tim Paskibra SMPN 2 Malang</strong></div>
+      </div>
+      <div class="col-md-5 mb-5 prestasi">
+        <img src="Prestasi 3.png" alt="Prestasi 3">
+        <div class="prestasi-caption">Juara 3 Individu Foil Putri U14 ajang Fencing Kajari Open Championship Anggar<br><strong>Andi Amira kelas 9A</strong></div>
+      </div>
+      <div class="col-md-5 mb-5 prestasi">
+        <img src="Prestasi 4.png" alt="Prestasi 4">
+        <div class="prestasi-caption">Juara 3 kejuaraan Judo Piala UNESA<br><strong>Ahmad Mubin Persada Kelas 9A</strong></div>
+      </div>
+      <div class="col-md-5 mb-5 prestasi">
+        <img src="Prestasi 5.png" alt="Prestasi 5">
+        <div class="prestasi-caption">Juara II Kumite +55 Kg SMP Putra dalam kejuaraan Piala Pangdam V/BRW di Surabaya.<br><strong> M. Aldo Ferdianto kelas 8F</strong></div>
+      </div>
+      <div class="col-md-5 mb-5 prestasi">
+        <img src="Prestasi 6.png" alt="Prestasi 6">
+        <div class="prestasi-caption">Kejuaraan Karate Festival & Open Tournament Piala Kemerdekaan RI- Ketua DPRD Kota Malang.<br><strong>Aslam kelas 9G</strong></div>
+      </div>
+    </div>
+  </div>
+
+ <!-- Video Section -->
+ <div class="container video">
+  <div class="video-title">
+    <h1>Video</h1>
+  </div>
+</div>
+
+<div id="videoCarousel" class="carousel slide ">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="https://youtu.be/oefce7-8VwE?si=Y4eAHxY8wt2s9bjr" target="_blank">
+        <img src="thumbnail 1.png" class="d-block w-100" alt="Video 1">
+        <i class="bi bi-play-circle-fill play-icon"></i>
+      </a>
+    </div>
+    <div class="carousel-item">
+      <a href="https://youtu.be/w36G_CZKir4?si=_mL63DNg_1gwm5mr">
+        <img src="thumbnail 2 (1).png" class="d-block w-100" alt="Video 2">
+        <i class="bi bi-play-circle-fill play-icon"></i>
+      </a>
+    </div>
+    <div class="carousel-item">
+      <a href="https://youtu.be/iSaUeqGY0cE?si=bfGVTLr7IkppSCZ2">
+        <img src="thumbnail 3 (1).png" class="d-block w-100" alt="Video 3">
+        <i class="bi bi-play-circle-fill play-icon"></i>
+      </a>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+  
+
+ <!--footer-->
+ <footer class="footer">
+  <div class="container">
+      <div class="row text-center text-md-start">
+          <div class="col-md-3 mb-3 header-foot">
+              <img src="logo putih.png"><br><br>
+              <p class="vismi">Unggul Dalam Imtaq dan Iptek, Berkarakter, Serta Peduli dan Berbudaya Lingkungan</p>
+          </div>
+          <div class="col-md-3 mb-3 header-foot">
+              <h5>Alamat</h5><br><br>
+              <p>Jl. Prof. Moch Yamin No. 60, Sukoharjo, Kec. Klojen, Kota Malang, Jawa Timur 65118</p>
+          </div>
+          <div class="col-md-3 mb-3 header-foot">
+              <h5>Kontak</h5><br><br>
+              <p>(0341) 325508</p>
+              <p>smpn2mlg.medsos@gmail.com</p>
+          </div>
+          <div class="col-md-3 mb-3 header-foot">
+              <h5>Kantor</h5><br><br>
+              <p class="dino">Senin - Jumat</p>
+              <p class="dino">07.00 - 16.00</p>
+          </div>
+      </div>
+      <div class="row bottom-row">
+          <div class="col-md-6 d-flex justify-content-start">
+              <div class="social-icons">
+                <a href="https://www.facebook.com/osis.satwimaba.1"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.youtube.com/channel/UCwuOyXafaSoxICVCQKu1BQg"><i class="bi bi-youtube"></i></a>
+                <a href="https://www.instagram.com/smpnegeri2mlg/?igshid=13omrlhk8pdjp"><i class="bi bi-instagram"></i></a>
+                <a href="https://x.com/smpn2mlg"><i class="bi bi-twitter"></i></a>
+              </div>
+          </div>
+          <div class="col-md-6 d-flex justify-content-end">
+              <p class="copyright">&copy; 2024 All Rights Reserved</p>
+          </div>
+      </div>
+  </div>
+</footer>
+
+  <!-- Script Bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
